@@ -528,7 +528,7 @@
 
   .quem_somos_container div {
     height: 30.563rem;
-    width: 82%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -697,7 +697,7 @@
     /* --text-lg:; */
     --text-xl: 2.65rem;
     --border-radius: 0.25rem;
-    --margem-lateral-pagina: 14vw;
+    --margem-lateral-pagina: 17vw;
   }
 
   /* Desktop */
