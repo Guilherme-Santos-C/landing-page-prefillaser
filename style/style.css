@@ -519,7 +519,9 @@
 
   .quem_somos_container video {
     width: 80%;
-    height: 30.563rem;
+    max-width: 550px;
+    max-height: 80%;
+    min-height: 80%;
     object-fit: cover;
     /* faz o vídeo preencher todo o espaço */
     object-position: center;
@@ -527,7 +529,7 @@
   }
 
   .quem_somos_container div {
-    height: 30.563rem;
+    height: 80%;
     width: 80%;
     display: flex;
     flex-direction: column;
