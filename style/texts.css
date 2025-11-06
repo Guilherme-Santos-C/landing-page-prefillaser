@@ -1,0 +1,11 @@
+h1 {
+    font-size: var(--text-lg);
+}
+
+h2{
+    font-size: var(--text-lg);
+}
+
+p {
+    font-size: var(--text-md);
+}
