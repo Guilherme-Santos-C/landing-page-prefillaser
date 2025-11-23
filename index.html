@@ -4,81 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil laser</title>
+    <title>Perfil Laser</title>
     <meta name="description"
         content="Serviços profissionais de corte a laser e dobra de chapas metálicas com alta precisão e acabamento de qualidade. Atendemos projetos industriais, arquitetônicos e personalizados.">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="icon" type="image/png" href="/images/logo.svg">
+    <link rel="icon" type="image/png" href="/images/favicon.svg">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="Logo da Perfil Laser">
-        <nav>
+        <img src="images/logo.svg" alt="Logo da Perfil Laser" class="header-logo mobile-hidden">
+        <img src="images/logo_mobile.svg" alt="Logo da Perfil Laser" class="header-logo-mobile mobile-show">
+        <nav class="mobile-hidden">
             <a href="#container_quem_somos">Sobre nós</a>
             <a href="#section_servicos">Serviços</a>
-            <a href="#">Projetos</a>
+            <a href="#container_form">Dúvidas</a>
         </nav>
-        <button id="button_cta">Contato</button>
+        <button class="cta_whatsapp header-button mobile-hidden">Contato</button>
+        <div class="header-container-mobile mobile-show">
+            <button class="cta_whatsapp">Contato</button>          
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
     <main>
         <section class="section-introducao">
             <div class="section-introducao-content">
-                <h1>CORTE&nbsp;E&nbsp;DOBRA&nbsp;EM ALTA&nbsp;PRECISÃO,&nbsp;NOSSA
+                <h1 class="mobile-hidden">CORTE&nbsp;E&nbsp;DOBRA&nbsp;EM ALTA&nbsp;PRECISÃO,&nbsp;NOSSA
                     EXCELÊNCIA&nbsp;É&nbsp;UM&nbsp;HÁBITO!</h1>
-                <p>Transformamos chapas metálicas em peças sob medida,<br class="width-1440"> com agilidade, tecnologia
+                <h1 class="mobile-show">CORTE E DOBRA EM ALTA PRECISÃO, NOSSA EXCELÊNCIA É UM HÁBITO!</h1>
+                <p>Transformamos chapas metálicas em peças sob medida,com agilidade, tecnologia
                     e acabamento impecável.
                 </p>
-                <button id="button_cta">Solicite seu orçamento!</button>
+                <button class="cta_whatsapp">Solicite seu orçamento!</button>
             </div>
             <div class="hero-video-container">
-                <video autoplay controls muted loop playsinline preload="none">
-                    <source src="videos/hero_video.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline class="meu-video">
+                    <source src="videos/videositenovo.webm" type="video/webm">
                 </video>
             </div>
             <div class="quem_somos_container" id="container_quem_somos">
-                <video autoplay controls muted loop playsinline preload="none">
-                    <source src="videos/video_gois.mp4" type="video/mp4">
-                </video>
+                <img src="images/imagem_maquinario.svg" alt="Imagem máquinario">
                 <div>
                     <h2>QUEM NÓS <br>SOMOS?</h2>
                     <p>
                         A Perfil Laser é especializada em corte e dobra de chapas metálicas,
                         unindo tecnologia de alta performance e equipe experiente para garantir
-                        precisão, qualidade e pontualidade.Nosso foco é oferecer soluções sob
+                        precisão, qualidade e pontualidade. Nosso foco é oferecer soluções sob
                         medida e construir parcerias duradouras, baseadas em confiança e excelência.
                     </p>
-                    <button id="button_cta">Fale já conosco!</button>
+                    <button class="cta_whatsapp">Fale já conosco!</button>
                 </div>
             </div>
         </section>
-
+        <div class="fundo-cor-efeito-quem-somos"></div>
         <section class="section_servicos" id="section_servicos">
-            <h2>Soluções em corte e dobra<br>metálica na perfil laser</h2>
+            <h2>SOLUÇÕES EM CORTE E DOBRA<br>MÉTALICA NA PERFIL LASER</h2>
             <div class="servicos_container_cards">
                 <div class="servicos_card">
-                    <h5>Dobras CNC</h5>
+                    <div class="container_title_card_servicos">
+                        <h5>DOBRAS CNC</h5>
+                    </div>
                     <div class="linha-do-card"></div>
                     <p>Dobras controladas por CNC para peças uniformes e dentro da medida.<br><span
                             class="bold">Aplicações</span>: perfis U/L, painéis metálicos, estruturas e peças sob
                         medida.</p>
-                    <button id="button_cta">Saiba mais</button>
+                    <button class="cta_whatsapp">Saiba mais</button>
                 </div>
                 <div class="servicos_card">
-                    <h5>Corte em Guilhotina</h5>
+                    <div class="container_title_card_servicos">
+                        <h5>CORTE EM GUILHOTINA</h5>
+                    </div>
                     <div class="linha-do-card"></div>
                     <p>Cortes retos e precisos em aço, inox, alumínio e latão, com rapidez e ótimo acabamento.<br><span
                             class="bold">Aplicações</span>: chapas finas e médias, peças planas, componentes
                         industriais.</p>
-                    <button id="button_cta">Saiba mais</button>
+                    <button class="cta_whatsapp">Saiba mais</button>
                 </div>
                 <div class="servicos_card">
-                    <h5>Corte a laser</h5>
+                    <div class="container_title_card_servicos">
+                        <h5>CORTE A LASER</h5>
+                    </div>
                     <div class="linha-do-card"></div>
                     <p>Corte de alta precisão para peças detalhadas e sem rebarbas.<br><span
                             class="bold">Aplicações</span>: peças industriais, arquitetônicas e personalizadas.</p>
-                    <button id="button_cta">Saiba mais</button>
+                    <button class="cta_whatsapp">Saiba mais</button>
                 </div>
             </div>
         </section>
@@ -108,7 +122,7 @@
                         <img src="images/prazos_card.svg" alt="Ícone de relógio">
                     </div>
                     <div class="container-content-card">
-                        <h5>Cumprimentos de prazos</h5>
+                        <h5>Cumprimento de prazos</h5>
                         <p>Produção eficiente e entrega dentro do cronograma combinado.</p>
                     </div>
                 </div>
@@ -126,7 +140,7 @@
                         <img src="images/solucao_sob_medida.svg" alt="Ícone de régua">
                     </div>
                     <div class="container-content-card">
-                        <h5>Soluções sob medidada</h5>
+                        <h5>Soluções sob medida</h5>
                         <p>Atendemos projetos personalizados, de pequenos lotes a grandes produções.</p>
                     </div>
                 </div>
@@ -142,16 +156,20 @@
             </div>
         </section>
         <section class="section-form">
-            <div class="container-form">
+            <div class="container-form" id="container_form">
                 <div class="form-header">
                     <h2>FALE COM A GENTE</h2>
                     <p>Precisa de orçamento rápido ou tirar dúvida?<br>Fale direto com nossa equipe.</p>
                 </div>
-                <form action="" class="form">
-                    <input name="nomeCompleto" type="text" placeholder="Seu nome completo *" required>
-                    <input name="email" type="email" placeholder="Seu melhor e-mail *" required>
-                    <input name="telefone" type="tel" placeholder="Seu número de Whatsapp *" required>
-                    <textarea name="mensagem" id="" placeholder="Escreva sua mensagem *" required></textarea>
+                <form class="form" id="form_contato">
+                    <input name="nome" type="text" placeholder="Seu nome completo *" id="nome" maxlength="60" required>
+                    <input name="email" type="email" placeholder="Seu melhor e-mail *" id="email" maxlength="100"
+                        required>
+                    <input name="telefone" type="tel" placeholder="Seu número de Whatsapp *" id="telefone"
+                        maxlength="15" required>
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem *" id="mensagem" required></textarea>
+                    <!-- Honeypot anti-bot -->
+                    <input type="text" id="website" name="website" style="display:none">
                     <button type="submit">Quero enviar minha mensagem!</button>
                 </form>
             </div>
@@ -182,11 +200,22 @@
         <div class="footer-column3">
             <h5>Redes sociais</h5>
             <div class="container-redes-sociais-imgs">
-                <img src="images/whatsapp_icon.svg" alt="Icone do Whatsapp">
-                <img src="images/instagram-logo.svg" alt="Icone do Instagram">
+                <img src="images/whatsapp_icon.svg" alt="Icone do Whatsapp" class="cta_whatsapp">
+                <img src="images/instagram-logo.svg" alt="Icone do Instagram" class="cta_instagram">
             </div>
         </div>
     </footer>
+    <img src="images/whatsapp_fixed_icon.png" alt="Icone do Whatsapp" class="whatsapp_fixed_icon cta_whatsapp">
+    <div id="toast" class="toast hidden">
+        <span class="icon">✔</span>
+        Sua mensagem foi enviada com sucesso!
+    </div>
+    <div class="overlay" id="menuOverlay">
+        <div class="closeBtn" id="closeBtn">&times;</div>
+        <a href="#container_quem_somos">Sobre nós</a>
+        <a href="#section_servicos">Serviços</a>
+        <a href="#container_form">Dúvidas</a>
+    </div>
     <script src="src/main.js"></script>
 </body>
 
