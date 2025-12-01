@@ -127,8 +127,8 @@ button:active {
         --text-md: 1rem;
         --text-lg: 1.5rem;
         --border-radius: 0.25rem;
-        --margem-lateral-pagina: 3vw;
-        --margem-lateral-pagina-extra: 9vw;
+        --margem-lateral-pagina: 5vw;
+        --margem-lateral-pagina-extra: 7vw;
     }
 
     /*estilo padrão (mobile)*/
@@ -136,6 +136,9 @@ button:active {
         height: 32px;
     }
     .mobile-hidden { display: none; }
+    h1 {
+        line-height: var(--espaco-md);
+    }
 
     body {
         width: 100vw;
@@ -248,10 +251,10 @@ button:active {
         height: 83.3rem;
         width: 100%;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 33.33%);
         grid-template-columns: 100%;
-        gap: 5rem;
-        padding: 5rem var(--margem-lateral-pagina);
+        row-gap: 5rem;
+        padding: 3rem var(--margem-lateral-pagina);
         text-align: center;
         place-items: center;
     }
@@ -284,11 +287,12 @@ button:active {
     }
 
     .quem_somos_container {
+        place-self: start;
         height: 46.875rem;
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         background-color: var(--cor-azul-claro);
         border-radius: var(--border-radius);
@@ -306,7 +310,7 @@ button:active {
         padding: 0 var(--margem-lateral-pagina-extra);
         display: flex;
         flex-direction: column;
-        gap: var(--espaco-md);
+        gap: var(--espaco-sm);
         align-items: center;
         justify-content: space-between;
     }
@@ -322,6 +326,7 @@ button:active {
     .quem_somos_container div p {
         color: var(--secondary-color);
         line-height: var(--espaco-md);
+        padding: 0 var(--espaco-sm);
     }
 
     .quem_somos_container div button {
@@ -329,7 +334,7 @@ button:active {
     }
 
     .fundo-cor-efeito-quem-somos {
-        height: 16.55rem;
+        height: 28.124rem;
         width: 100%;
         z-index: -1;
         background-color: var(--secondary-color);
@@ -337,37 +342,41 @@ button:active {
 
     .section_servicos {
         width: 100%;
-        height: 49.95rem;
+        height: 74rem;
         padding-left: var(--margem-lateral-pagina);
         padding-right: var(--margem-lateral-pagina);
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        gap: var(--espaco-lg);
     }
 
     .section_servicos>h2 {
         color: var(--cor-branca);
         text-align: center;
     }
+    .section_servicos>h2>br {
+        display: none;
+    }
 
     .servicos_container_cards {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: var(--espaco-md);
     }
 
     .servicos_card {
-        width: 100%;
-        height: 25rem;
+        width: 80%;
+        height: 18rem;
         background-color: var(--cor-branca);
         border-radius: var(--border-radius);
-        display: grid;
-        grid-template-rows: 19% 1px 60% 20%;
-        place-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         padding: var(--espaco-md);
         transition: 0.5s;
     }
@@ -391,10 +400,6 @@ button:active {
         height: 1px;
         width: 100%;
         border-radius: var(--border-radius);
-    }
-
-    .container_title_card_servicos {
-        padding-bottom: var(--espaco-md);
     }
 
     .servicos_card button {
