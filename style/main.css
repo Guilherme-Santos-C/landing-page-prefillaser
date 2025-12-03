@@ -329,7 +329,7 @@ button:active {
     }
 
     .fundo-cor-efeito-quem-somos {
-        height: 28.124rem;
+        height: 22.124rem;
         width: 100%;
         z-index: -1;
         background-color: var(--secondary-color);
