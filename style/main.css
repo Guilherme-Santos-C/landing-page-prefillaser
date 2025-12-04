@@ -297,8 +297,8 @@ button:active {
     }
 
     .quem_somos_container img {
-        height: 14.438rem;
-        width: 14.438rem;
+        height: 16.25rem;
+        width: 16.25rem;
         object-fit: cover;
         object-position: center;
     }
@@ -345,7 +345,8 @@ button:active {
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: var(--espaco-lg);
         align-items: center;
     }
 
@@ -501,14 +502,7 @@ button:active {
         padding: var(--espaco-md);
         border-radius: var(--border-radius);
     }
-
-    .form-header {
-        display: flex;
-        flex-direction: column;
-        gap: var(--espaco-sm);
-        color: var(--secondary-color);
-    }
-
+    
     .form {
         display: flex;
         flex-direction: column;
@@ -516,7 +510,7 @@ button:active {
     }
 
     .form>input {
-        height: 3.5rem;
+        height: 2.8rem;
         padding: var(--espaco-sm);
         border: none;
         border-radius: var(--border-radius);
@@ -557,7 +551,7 @@ button:active {
     }
 
     .fundo-cor-efeito {
-        height: 10.688rem;
+        height: 9.7rem;
         width: 100%;
         z-index: -1;
         background-color: var(--secondary-color);
@@ -565,18 +559,19 @@ button:active {
 
     footer {
         width: 100%;
-        padding: 0 var(--margem-lateral-pagina);
+        padding: 0 ;
         height: 45rem;
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        overflow: hidden;
     }
 
     footer>div {
         height: 100%;
-        width: 50%;
+        width: auto;
         text-align: center;
         padding: var(--espaco-md) 0;
         display: flex;
@@ -610,6 +605,7 @@ button:active {
     }
 
     .footer-column3 {
+        height: 70%;
         gap: 2rem;
     }
 
