@@ -480,11 +480,10 @@ button:active {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        gap: var(--espaco-md);
         background-color: var(--cor-branca);
         width: 100%;
         height: 43rem;
-        padding: var(--espaco-lg) var(--espaco-lg);
+        padding: var(--espaco-md);
         border-radius: var(--border-radius);
     }
 
@@ -552,18 +551,21 @@ button:active {
     footer {
         width: 100%;
         padding: 0 var(--margem-lateral-pagina);
-        height: 30rem;
+        height: 45rem;
         background-color: var(--secondary-color);
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
     }
 
     footer>div {
         height: 100%;
-        padding: var(--espaco-lg) 0;
+        text-align: center;
+        padding: var(--espaco-md) 0;
         display: flex;
         flex-direction: column;
+        align-items: center;
         color: var(--cor-azul-claro);
     }
 
@@ -572,7 +574,7 @@ button:active {
     }
 
     .footer-column1>img {
-        max-width: 14.875rem;
+        max-width: 6rem;
     }
 
     .footer-column2 {
@@ -603,6 +605,48 @@ button:active {
     .container-redes-sociais-imgs {
         display: flex;
         gap: var(--espaco-sm);
+    }
+    .whatsapp_fixed_icon {
+        position: fixed;
+        transition: 0.2s;
+        bottom: var(--espaco-md);
+        right: var(--espaco-md);
+        z-index: 2;
+        height: 70px;
+        width: 70px;
+    }
+
+    .toast {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        background: #e3f4f1;
+        color: #0e5e4a;
+        padding: 1rem 1.5rem;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity .4s ease, transform .4s ease;
+        z-index: 2;
+    }
+
+    .toast .icon {
+        font-size: 1.4rem;
+    }
+
+    .toast.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .hidden {
+        pointer-events: none;
     }
 }
 
