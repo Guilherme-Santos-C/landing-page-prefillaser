@@ -196,12 +196,12 @@ button:active {
         left: 0;
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.95);
+        background: var(--cor-branca);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: var(--espaco-md);
         opacity: 0;
         pointer-events: none;
         transition: 0.3s;
@@ -216,7 +216,7 @@ button:active {
 
 
     .overlay a {
-        color: #fff;
+        color: var(--secondary-color);
         font-size: 28px;
         text-decoration: none;
     }
@@ -226,9 +226,9 @@ button:active {
         position: absolute;
         top: 20px;
         right: 20px;
-        font-size: 26px;
+        font-size: 39px;
         cursor: pointer;
-        color: #fff;
+        color: var(--secondary-color);
     }
 
     main {

@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('hamburgerBtn');
   const overlay = document.getElementById('menuOverlay');
   const closeBtn = document.getElementById('closeBtn');
+  const linksOverlay = [... document.querySelector('#menuOverlay').children]
 
 
   btn.addEventListener('click', () => {
@@ -110,7 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  closeBtn.addEventListener('click', () => {
-    overlay.classList.remove('open');
+  linksOverlay.forEach(element => {
+    element.addEventListener('click', () => {
+      overlay.classList.remove('open');
+    });
   });
 });
