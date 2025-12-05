@@ -83,22 +83,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const payload = { nome, email, telefone, mensagem };
+    
+    mostrarToast( );
 
-    try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxjuNE4_VE4c7DKJv8vNcWT8yHm2YgprCDzKmzJPeb_WhU19KPq93z6BEwLBsk4J3NM/exec", {
-        method: "POST",
-        mode: 'no-cors',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+    // try {
+    //   const response = await fetch("https://script.google.com/macros/s/AKfycbxjuNE4_VE4c7DKJv8vNcWT8yHm2YgprCDzKmzJPeb_WhU19KPq93z6BEwLBsk4J3NM/exec", {
+    //     method: "POST",
+    //     mode: 'no-cors',
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(payload),
+    //   });
 
-      form.reset();
-      mostrarToast();
+    //   form.reset();
+    //   mostrarToast();
 
-    } catch (error) {
-      alert("Erro ao enviar formulário");
-      console.error("Erro ao enviar formulário:", error);
-    }
+    // } catch (error) {
+    //   alert("Erro ao enviar formulário");
+    //   console.error("Erro ao enviar formulário:", error);
+    // }
   });
   const btn = document.getElementById('hamburgerBtn');
   const overlay = document.getElementById('menuOverlay');

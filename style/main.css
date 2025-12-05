@@ -111,7 +111,7 @@ button:active {
 
 /*----------------*/
 
-@media (min-width: 320px) {
+@media screen and (max-width: 1024px) {
     :root {
         --espaco-xs: 0.4rem;
         --espaco-sm: 1rem;
@@ -590,6 +590,8 @@ button:active {
 
     .footer-column1 {
         gap: 3rem;
+        justify-content: space-between;
+        height: 70%;
     }
 
     .footer-column1>img {
@@ -669,14 +671,35 @@ button:active {
     }
 }
 
-@media (min-width: 400px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+     :root {
+        --espaco-xs: 0.4rem;
+        --espaco-sm: 1rem;
+        --espaco-md: 2rem;
+        --espaco-lg: 4rem;
+        --primary-color: #EA2D2D;
+        --secondary-color: #0F334B;
+        --cor-branca: #EAF9FF;
+        --cor-azul-claro: #D6E9F1;
+        --text-sx: 0.9rem;
+        --text-sm: 1.1rem;
+        --text-md: 1.3rem;
+        --text-lg: 1.6rem;
+        --border-radius: 0.25rem;
+        --margem-lateral-pagina: 5vw;
+        --margem-lateral-pagina-extra: 7vw;
+    }
+    .servicos_card p {
+        font-size: 1rem;
+    }
 
-@media (min-width: 768px) {}
+    footer{
+        height: 50rem;
+    }
 
-@media (min-width: 1024px) {}
+}
 
-@media (min-width: 1280px) {
-    /* Ícone Hamburguer */
+@media (min-width: 1024px){
     .hamburger{ display: none;}
     :root {
         --espaco-xs: 0.5rem;
@@ -687,11 +710,11 @@ button:active {
         --secondary-color: #0F334B;
         --cor-branca: #EAF9FF;
         --cor-azul-claro: #D6E9F1;
-        --text-sm: 1.20rem;
-        --text-md: 1.4rem;
-        --text-lg: 2.7rem;
+        --text-sm: 1.17rem;
+        --text-md: 1.2rem;
+        --text-lg: 2.5rem;
         --border-radius: 0.25rem;
-        --margem-lateral-pagina: 5vw;
+        --margem-lateral-pagina: 3vw;
     }
 
     .mobile-show {
@@ -825,7 +848,7 @@ button:active {
     .quem_somos_container div p {
         color: var(--secondary-color);
         line-height: var(--espaco-md);
-        padding-right: 6rem;
+        padding-right: 5.5rem;
     }
 
     .quem_somos_container div button {
@@ -1165,6 +1188,26 @@ button:active {
 
     .hidden {
         pointer-events: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Ícone Hamburguer */
+    .hamburger{ display: none;}
+    :root {
+        --espaco-xs: 0.5rem;
+        --espaco-sm: 1rem;
+        --espaco-md: 2rem;
+        --espaco-lg: 5rem;
+        --primary-color: #EA2D2D;
+        --secondary-color: #0F334B;
+        --cor-branca: #EAF9FF;
+        --cor-azul-claro: #D6E9F1;
+        --text-sm: 1.20rem;
+        --text-md: 1.4rem;
+        --text-lg: 2.7rem;
+        --border-radius: 0.25rem;
+        --margem-lateral-pagina: 5vw;
     }
 }
 
