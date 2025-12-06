@@ -506,7 +506,8 @@ button:active {
     .form {
         display: flex;
         flex-direction: column;
-        gap: var(--espaco-md);
+        justify-content: space-evenly;
+        height: 100%;
     }
 
     .form>h2 {
